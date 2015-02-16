@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Convertor</title>
+  <link rel="stylesheet" href="libs/bower/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+    <h3>Temperature Conversion</h3>
+    <hr>
+    <form method="post">
+      <div class="row">
+        <div class="col-sm-8 col-xs-12">
+          <div class="panel panel-default form-group">
+            <div class="panel-heading">
+              <label for="temperature">Temperature (<span class="templOption-type"></span>)</label>
+              <span>
+                <button type="button" class="btn btn-default" id="tempOption">
+                  <spam class="glyphicon glyphicon-sort"></spam>
+                </button>
+              </span>
+            </div>
+            <div class="panel-body">
+              <input class="form-control" type="text" required="required" id="temperature" pattern="[0-9]{4}">
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-xs-12">
+          <div id="result" class="panel panel-success">
+            <div class="panel-heading">
+              <h3><span class="inputTemp"></span> === <span class="convertedTemp"></span> </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 com-xs-12">
+          <input type="button" value="Convert" class="btn btn-primary" id="convertBtn">
+        </div>
+      </div>
+    </form>
+  </div>
+  <script src="libs/bower/jquery/dist/jquery.js"></script>
+  <script src="convert.js"></script>
+</body>
+</html>
